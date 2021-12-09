@@ -32,6 +32,7 @@ namespace SerializationAndDeserialization
             Console.WriteLine(bsobj.Name);
         }
     }
+
     [DataContract]
     class BlogSites
     {

@@ -18,6 +18,16 @@ namespace SerializationAndDeserialization
             ser.Serialize(fileStream, orderForm);
         }
     }
+    class XmlDeserialization
+    {
+        public static void DeserializeXml()
+        {
+            XmlSerializer ser = new XmlSerializer(typeof(OrderForm));
+            FileStream fileStream = new FileStream(@"C:\Users\NEHA TELECOM\source\SerializationAndDeserialization\SerializationAndDeserialization\SerializationAndDeserialization\ExampleForXml.txt", FileMode.Open);
+            OrderForm data = (OrderForm)ser.Deserialize(fileStream);
+            Console.WriteLine(data.OrderDate);
+        }
+    }
     public class OrderForm
     {
         public DateTime OrderDate;
