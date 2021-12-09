@@ -12,8 +12,9 @@ namespace SerializationAndDeserialization
 
             /* JsonSerialization jsonSerialization = new JsonSerialization();
              jsonSerialization.JsonSerialize();*/
-            JsonDeserialization jsonDeserialization = new JsonDeserialization();
-            jsonDeserialization.JsonDeserialize();
+            /* JsonDeserialization jsonDeserialization = new JsonDeserialization();
+             jsonDeserialization.JsonDeserialize();*/
+            XMLSerialization.SerializeXml();
 
 
         }
