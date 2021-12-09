@@ -20,6 +20,18 @@ namespace SerializationAndDeserialization
             Console.WriteLine(jsonData);
         }
     }
+    class JsonDeserialization
+    {
+        public void JsonDeserialize()
+        {
+            string json = @"{
+              'Name' : 'Sam',
+              'Description' : 'Welcome to universe'
+                 }";
+            BlogSites bsobj = JsonConvert.DeserializeObject<BlogSites>(json);
+            Console.WriteLine(bsobj.Name);
+        }
+    }
     [DataContract]
     class BlogSites
     {
