@@ -7,8 +7,11 @@ namespace SerializationAndDeserialization
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            BinaryDeserealization binaryDeserialization = new BinaryDeserealization();
-            binaryDeserialization.Deserialization();
+            /* BinaryDeserealization binaryDeserialization = new BinaryDeserealization();
+             binaryDeserialization.Deserialization();*/
+
+            JsonSerialization jsonSerialization = new JsonSerialization();
+            jsonSerialization.JsonSerialize();
 
         }
     }
